@@ -28,7 +28,7 @@ vars = {
 
   'pyyaml_version': '3.12',
 
-  'chromium_git': 'https://chromium.googlesource.com',
+  'chromium_git': 'https://github.com/ibaoger/webrtc',
   'electron_git': 'https://github.com/electron',
   'nodejs_git': 'https://github.com/nodejs',
   'yaml_git': 'https://github.com/yaml',
