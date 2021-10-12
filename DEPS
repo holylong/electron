@@ -29,7 +29,7 @@ vars = {
   'pyyaml_version': '3.12',
 
   #'chromium_git': 'https://chromium.googlesource.com',
-  'chromium_git': 'https://webrtc.bj2.agoralab.co/webrtc-mirror',
+  #'chromium_git': 'https://webrtc.bj2.agoralab.co/webrtc-mirror',
   'electron_git': 'https://github.com/electron',
   'nodejs_git': 'https://github.com/nodejs',
   'yaml_git': 'https://github.com/yaml',
@@ -85,10 +85,10 @@ vars = {
 #'url': (Var("chromium_git")) + '/chromium/src.git@' + (Var("chromium_version")),
 
 deps = {
-  'src': {
-    'url': (Var("chromium_git")) + '/src.git@' + '65e8d9facab05de13634d777702b2c93288f8849',
-    'condition': 'checkout_chromium and process_deps',
-  },
+  #'src': {
+  #  'url': (Var("chromium_git")) + '/src.git@' + '65e8d9facab05de13634d777702b2c93288f8849',
+  #  'condition': 'checkout_chromium and process_deps',
+  #},
   'src/third_party/nan': {
     'url': (Var("nodejs_git")) + '/nan.git@' + (Var("nan_version")),
     'condition': 'checkout_nan and process_deps',
