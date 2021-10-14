@@ -85,10 +85,10 @@ vars = {
 #'url': (Var("chromium_git")) + '/chromium/src.git@' + (Var("chromium_version")),
 #'url': (Var("chromium_git")) + '/src.git@' + '65e8d9facab05de13634d777702b2c93288f8849',
 deps = {
-  'src': {
-	'url': (Var("chromium_git")) + '/chromium/src.git@' + (Var("chromium_version")),
-    'condition': 'checkout_chromium and process_deps',
-  },
+  #'src': {
+#	'url': (Var("chromium_git")) + '/chromium/src.git@' + (Var("chromium_version")),
+#    'condition': 'checkout_chromium and process_deps',
+#  },
   'src/third_party/nan': {
     'url': (Var("nodejs_git")) + '/nan.git@' + (Var("nan_version")),
     'condition': 'checkout_nan and process_deps',
